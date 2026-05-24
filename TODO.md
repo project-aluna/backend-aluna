@@ -147,23 +147,23 @@ src/
 
 ## 5.1 Required Environment Variables
 
-* [ ] NODE_ENV
-* [ ] PORT
-* [ ] DATABASE_URL
-* [ ] CORS_ORIGIN
-* [ ] AUTH_PROVIDER
-* [ ] SUPABASE_JWT_SECRET
-* [ ] API_VERSION
-* [ ] LOG_LEVEL
+* [x] NODE_ENV
+* [x] PORT
+* [x] DATABASE_URL
+* [x] CORS_ORIGIN
+* [x] AUTH_PROVIDER
+* [x] SUPABASE_JWT_SECRET
+* [x] API_VERSION
+* [x] LOG_LEVEL
 
 ---
 
 ## 5.2 Env Validation
 
-* [ ] Create env schema with Zod
-* [ ] Validate env on app startup
-* [ ] Stop app if required env missing
-* [ ] Never access `process.env` directly outside config layer
+* [x] Create env schema with Zod
+* [x] Validate env on app startup
+* [x] Stop app if required env missing
+* [x] Never access `process.env` directly outside config layer
 
 ---
 
