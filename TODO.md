@@ -1,7 +1,7 @@
 # todo.md — Aluna Backend
 
 Version: 1.0  
-Stack: Bun + ElysiaJS + Zod + Drizzle ORM + MySQL  
+Stack: Bun + ElysiaJS + Zod + Drizzle ORM + PostgreSQL  
 Status: Backend Execution Plan
 
 ---
@@ -171,14 +171,14 @@ src/
 
 ## 6.1 Elysia Server
 
-* [ ] Create base Elysia app
-* [ ] Add global prefix `/api/v1`
-* [ ] Add health check route
-* [ ] Add CORS plugin
-* [ ] Add Swagger plugin for dev
-* [ ] Add global error handler
-* [ ] Add request logger
-* [ ] Start server from `server.ts`
+* [x] Create base Elysia app
+* [x] Add global prefix `/api/v1`
+* [x] Add health check route
+* [x] Add CORS plugin
+* [x] Add Swagger plugin for dev
+* [x] Add global error handler
+* [x] Add request logger
+* [x] Start server from `server.ts`
 
 ---
 
@@ -203,8 +203,8 @@ Return:
 
 ## 7.1 Success Response Format
 
-* [ ] Create helper for success response
-* [ ] Use same format across all endpoints
+* [x] Create helper for success response
+* [x] Use same format across all endpoints
 
 Format:
 
@@ -220,11 +220,11 @@ Format:
 
 ## 7.2 Error Response Format
 
-* [ ] Create AppError class
-* [ ] Create error codes
-* [ ] Create global error handler
-* [ ] Hide internal error details in production
-* [ ] Log detailed error server-side
+* [x] Create AppError class
+* [x] Create error codes
+* [x] Create global error handler
+* [x] Hide internal error details in production
+* [x] Log detailed error server-side
 
 Format:
 
@@ -243,13 +243,13 @@ Format:
 
 ## 7.3 Error Codes
 
-* [ ] validation_error
-* [ ] unauthorized
-* [ ] forbidden
-* [ ] not_found
-* [ ] conflict
-* [ ] rate_limited
-* [ ] internal_error
+* [x] validation_error
+* [x] unauthorized
+* [x] forbidden
+* [x] not_found
+* [x] conflict
+* [x] rate_limited
+* [x] internal_error
 
 ---
 
@@ -257,22 +257,22 @@ Format:
 
 ## 8.1 Winston Setup
 
-* [ ] Create Winston logger service
-* [ ] Add console transport
-* [ ] Add log level from env
-* [ ] Use JSON logs in production
-* [ ] Use readable logs in development
+* [x] Create Winston logger service
+* [x] Add console transport
+* [x] Add log level from env
+* [x] Use JSON logs in production
+* [x] Use readable logs in development
 
 ---
 
 ## 8.2 Request Logging
 
-* [ ] Log method
-* [ ] Log path
-* [ ] Log status code
-* [ ] Log response time
-* [ ] Log request id
-* [ ] Do not log sensitive fields
+* [x] Log method
+* [x] Log path
+* [x] Log status code
+* [x] Log response time
+* [x] Log request id
+* [x] Do not log sensitive fields
 
 Sensitive fields:
 
@@ -332,7 +332,7 @@ Suggested limits:
 ## 10.1 Drizzle Setup
 
 * [ ] Configure Drizzle
-* [ ] Configure MySQL connection
+* [ ] Configure PostgreSQL connection
 * [ ] Configure drizzle-kit
 * [ ] Create migration folder
 * [ ] Create database connection test
