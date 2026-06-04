@@ -7,8 +7,9 @@
     "dev": "bun run --watch src/app/server.ts",
     "build": "bun build ./src/app/server.ts --outdir ./build",
     "start": "bun run ./build/server.js",
-    "db:generate": "drizzle-kit generate:pg",
-    "db:push": "drizzle-kit push:pg"
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:seed": "bun run src/db/seed.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
@@ -28,6 +29,7 @@
     "drizzle-kit": "^0.31.10",
     "drizzle-orm": "^0.45.2",
     "elysia": "^1.4.28",
+    "elysia-rate-limit": "^4.6.2",
     "nanoid": "^5.1.11",
     "postgres": "^3.4.9",
     "winston": "^3.19.0",
