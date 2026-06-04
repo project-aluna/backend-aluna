@@ -288,25 +288,25 @@ Sensitive fields:
 
 ## 9.1 CORS
 
-* [ ] Allow only configured origins
-* [ ] Reject unknown origins in production
-* [ ] Allow localhost in development
+* [x] Allow only configured origins
+* [x] Reject unknown origins in production
+* [x] Allow localhost in development
 
 ---
 
 ## 9.2 Headers
 
-* [ ] Add basic security headers
-* [ ] Disable unnecessary powered-by headers
-* [ ] Set JSON content-type consistently
+* [x] Add basic security headers
+* [x] Disable unnecessary powered-by headers
+* [x] Set JSON content-type consistently
 
 ---
 
 ## 9.3 Rate Limiting
 
-* [ ] Add simple in-memory rate limiter for MVP
-* [ ] Limit auth-sensitive endpoints stricter
-* [ ] Return `rate_limited` error code
+* [x] Add simple in-memory rate limiter for MVP
+* [x] Limit auth-sensitive endpoints stricter
+* [x] Return `rate_limited` error code
 
 Suggested limits:
 
@@ -318,12 +318,12 @@ Suggested limits:
 
 ## 9.4 Input Protection
 
-* [ ] Validate body with Zod
-* [ ] Validate query with Zod
-* [ ] Validate params with Zod
-* [ ] Trim user input
-* [ ] Limit string length
-* [ ] Reject unknown fields where needed
+* [x] Validate body with Zod
+* [x] Validate query with Zod
+* [x] Validate params with Zod
+* [x] Trim user input
+* [x] Limit string length
+* [x] Reject unknown fields where needed
 
 ---
 
@@ -331,11 +331,11 @@ Suggested limits:
 
 ## 10.1 Drizzle Setup
 
-* [ ] Configure Drizzle
-* [ ] Configure PostgreSQL connection
-* [ ] Configure drizzle-kit
-* [ ] Create migration folder
-* [ ] Create database connection test
+* [x] Configure Drizzle
+* [x] Configure PostgreSQL connection
+* [x] Configure drizzle-kit
+* [x] Create migration folder
+* [x] Create database connection test
 
 ---
 
@@ -343,38 +343,38 @@ Suggested limits:
 
 Create tables in this order:
 
-* [ ] users
-* [ ] user_preferences
-* [ ] lifestyle_goals
-* [ ] user_lifestyle_goals
-* [ ] routine_categories
-* [ ] routines
-* [ ] routine_schedule_days
-* [ ] routine_steps
-* [ ] daily_flows
-* [ ] daily_routine_entries
-* [ ] daily_step_entries
-* [ ] mood_logs
-* [ ] weekly_reflections
-* [ ] reminders
-* [ ] plans
-* [ ] user_subscriptions
+* [x] users
+* [x] user_preferences
+* [x] lifestyle_goals
+* [x] user_lifestyle_goals
+* [x] routine_categories
+* [x] routines
+* [x] routine_schedule_days
+* [x] routine_steps
+* [x] daily_flows
+* [x] daily_routine_entries
+* [x] daily_step_entries
+* [x] mood_logs
+* [x] weekly_reflections
+* [x] reminders
+* [x] plans
+* [x] user_subscriptions
 
 ---
 
 ## 10.3 Indexes & Constraints
 
-* [ ] unique users.email
-* [ ] unique users.auth_provider_id
-* [ ] unique daily_flows.user_id + flow_date
-* [ ] unique mood_logs.user_id + log_date
-* [ ] unique weekly_reflections.user_id + week_start_date
-* [ ] index routines.user_id
-* [ ] index routine_steps.routine_id
-* [ ] index daily_flows.user_id
-* [ ] index mood_logs.user_id
-* [ ] index reminders.user_id
-* [ ] index user_subscriptions.user_id
+* [x] unique users.email
+* [x] unique users.auth_provider_id
+* [x] unique daily_flows.user_id + flow_date
+* [x] unique mood_logs.user_id + log_date
+* [x] unique weekly_reflections.user_id + week_start_date
+* [x] index routines.user_id
+* [x] index routine_steps.routine_id
+* [x] index daily_flows.user_id
+* [x] index mood_logs.user_id
+* [x] index reminders.user_id
+* [x] index user_subscriptions.user_id
 
 ---
 
@@ -382,33 +382,33 @@ Create tables in this order:
 
 ## 11.1 Lifestyle Goals Seed
 
-* [ ] Tidur lebih teratur
-* [ ] Skincare lebih konsisten
-* [ ] Pagi lebih tenang
-* [ ] Kurangi overwhelmed
-* [ ] Lebih rutin bergerak
-* [ ] Punya waktu untuk diri sendiri
+* [x] Tidur lebih teratur
+* [x] Skincare lebih konsisten
+* [x] Pagi lebih tenang
+* [x] Kurangi overwhelmed
+* [x] Lebih rutin bergerak
+* [x] Punya waktu untuk diri sendiri
 
 ---
 
 ## 11.2 Routine Categories Seed
 
-* [ ] Morning
-* [ ] Night
-* [ ] Skincare
-* [ ] Wellness
-* [ ] Fitness
-* [ ] Haircare
-* [ ] Mindfulness
-* [ ] Cycle Care
+* [x] Morning
+* [x] Night
+* [x] Skincare
+* [x] Wellness
+* [x] Fitness
+* [x] Haircare
+* [x] Mindfulness
+* [x] Cycle Care
 
 ---
 
 ## 11.3 Plans Seed
 
-* [ ] Free
-* [ ] Premium Monthly
-* [ ] Premium Yearly
+* [x] Free
+* [x] Premium Monthly
+* [x] Premium Yearly
 
 Free plan:
 
